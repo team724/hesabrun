@@ -1,5 +1,4 @@
 hesabrun
-Hesabrun is first open source accounting software in persian language with web interface.
 
 for see full project Demo see main website at https://hesabrun.ir
 
