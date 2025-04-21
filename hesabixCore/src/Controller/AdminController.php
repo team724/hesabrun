@@ -518,7 +518,7 @@ class AdminController extends AbstractController
             $item->setAmount($params['amount']);
             $item->setCardPan($params['card']);
             $item->setDateSubmit(time());
-            $item->setDes('واریز به حساب کسب و کار از طرف حسابیکس');
+            $item->setDes('واریز به حساب کسب و کار از طرف حسابران');
             $item->setRefID($params['refID']);
             $item->setGatePay($params['bank']);
             $item->setBank($bid->getWalletMatchBank()->getName());

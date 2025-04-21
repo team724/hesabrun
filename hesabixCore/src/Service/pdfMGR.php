@@ -54,7 +54,7 @@ class pdfMGR
         
         $mpdf->WriteHTML($printQueue->getView());
         $mpdf->SetAutoPageBreak(true);
-        $mpdf->SetTitle('حسابیکس');
+        $mpdf->SetTitle('حسابران');
         $mpdf->Output('Hesabix PrintOut.pdf', 'I');
     }
 

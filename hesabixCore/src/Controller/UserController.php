@@ -322,7 +322,7 @@ class UserController extends AbstractController
                 $email = (new Email())
                     ->to($user->getEmail())
                     ->priority(Email::PRIORITY_HIGH)
-                    ->subject('تایید ایمیل در حسابیکس')
+                    ->subject('تایید ایمیل در حسابران')
                     ->html(
                         $this->renderView('user/email/confrim-register.html.twig', [
                             'code' => $user->getVerifyCode()
@@ -384,7 +384,7 @@ class UserController extends AbstractController
             $email = (new Email())
                 ->to($user->getEmail())
                 ->priority(Email::PRIORITY_HIGH)
-                ->subject('تایید ایمیل در حسابیکس')
+                ->subject('تایید ایمیل در حسابران')
                 ->html(
                     $this->renderView('user/email/confrim-register.html.twig', [
                         'code' => $user->getVerifyCode()
@@ -516,7 +516,7 @@ class UserController extends AbstractController
         $email = (new Email())
             ->to($user->getEmail())
             ->priority(Email::PRIORITY_HIGH)
-            ->subject('حسابیکس - فراموشی کلمه عبور')
+            ->subject('حسابران - فراموشی کلمه عبور')
             ->html(
                 $this->renderView('user/email/confrim-forget-password.html.twig', [
                     'code' => $user->getVerifyCode()
@@ -591,7 +591,7 @@ class UserController extends AbstractController
             $email = (new Email())
                 ->to($user->getEmail())
                 ->priority(Email::PRIORITY_HIGH)
-                ->subject('تایید ایمیل در حسابیکس')
+                ->subject('تایید ایمیل در حسابران')
                 ->html(
                     $this->renderView('user/email/confrim-register.html.twig', [
                         'code' => $user->getVerifyCode()

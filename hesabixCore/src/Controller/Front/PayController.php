@@ -122,13 +122,13 @@ class PayController extends AbstractController
             $doc->setDes($wt->getDes());
             $doc->setAmount($wt->getAmount());
             $doc->setCode($provider->getAccountingCode($wt->getBid(), 'accounting'));
-            $walletUser = $entityManager->getRepository(User::class)->findOneBy(['email' => 'wallet@hesabix.ir']);
+            $walletUser = $entityManager->getRepository(User::class)->findOneBy(['email' => 'wallet@hesabrun.ir']);
             if ($walletUser)
                 $doc->setSubmitter($walletUser);
             else {
                 $wu = new User();
-                $wu->setFullName('کیف پول حسابیکس');
-                $wu->setEmail('wallet@hesabix.ir');
+                $wu->setFullName('کیف پول حسابران');
+                $wu->setEmail('wallet@hesabrun.ir');
                 $wu->setRoles([]);
                 $wu->setActive(true);
                 $entityManager->persist($wu);

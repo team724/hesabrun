@@ -42,11 +42,11 @@ class BusinessController extends AbstractController
             throw $this->createAccessDeniedException();
 
         $archiveUser = $entityManager->getRepository(User::class)->findOneBy([
-            'email' => 'archive@hesabix.ir'
+            'email' => 'archive@hesabrun.ir'
         ]);
         if (!$archiveUser) {
             $archiveUser = new User();
-            $archiveUser->setEmail('archive@hesabix.ir');
+            $archiveUser->setEmail('archive@hesabrun.ir');
             $archiveUser->setFullName('کاربر آرشیو و بایگانی');
             $archiveUser->setPassword(0);
             $archiveUser->setDateRegister(time());
